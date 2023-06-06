@@ -24,6 +24,7 @@ public class Enemy_AI : MonoBehaviour
 
     void SetDestionation()
     {
+      distanceToTarget = Vector3.Distance(target.position, transform.position);
       navMeshAgent.SetDestination(target.position);
     }
 }
