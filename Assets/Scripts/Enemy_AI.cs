@@ -10,6 +10,7 @@ public class Enemy_AI : MonoBehaviour
 
     NavMeshAgent navMeshAgent;
     float distanceToTarget = Mathf.Infinity;
+    bool isProvoked = false;
     
     void Start()
     {
@@ -25,11 +26,38 @@ public class Enemy_AI : MonoBehaviour
     void SetDestionation()
     {
       distanceToTarget = Vector3.Distance(target.position, transform.position);
-
-      if(distanceToTarget <= chaseRange)
+      if(isProvoked)
       {
-      navMeshAgent.SetDestination(target.position);
+        EngagedTarget();
+      }
+      else if(distanceToTarget <= chaseRange)
+      {
+        isProvoked = true;
+
+        
       }    
+    }
+
+    private void EngagedTarget()
+    {
+      if(distanceToTarget >= navMeshAgent.stoppingDistance)
+      {
+        ChaseTarget();
+      }
+      if (distanceToTarget <= navMeshAgent.stoppingDistance)
+      {
+        AttackTarget();
+      }
+    }
+
+    private void ChaseTarget()
+    {
+      navMeshAgent.SetDestination(target.position);
+    }
+
+    private void AttackTarget()
+    {
+        Debug.Log(name + "has got yah" + target.name);
     }
 
     void OnDrawGizmosSelected() 
