@@ -8,7 +8,7 @@ public class Weapons : MonoBehaviour
     [SerializeField] float range = 100f;
     void Update()
     {
-        if (Input.GetButtonDown("Fire"))
+        if (Input.GetButtonDown("Fire1"))
           {
             Shoot();
           }
