@@ -278,6 +278,11 @@ Camera:
   m_CorrespondingSourceObject: {fileID: 2000000, guid: c6453f8e1f814744d8b94e5a6d1f9942, type: 3}
   m_PrefabInstance: {fileID: 1546818699}
   m_PrefabAsset: {fileID: 0}
+--- !u!198 &594377771 stripped
+ParticleSystem:
+  m_CorrespondingSourceObject: {fileID: 3970712405615030588, guid: c6453f8e1f814744d8b94e5a6d1f9942, type: 3}
+  m_PrefabInstance: {fileID: 1546818699}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &606414111
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -920,6 +925,46 @@ PrefabInstance:
       propertyPath: m_Material
       value: 
       objectReference: {fileID: 13400000, guid: 9471378f4a8280c408226967fc53ad9c, type: 2}
+    - target: {fileID: 1185268526490227811, guid: c6453f8e1f814744d8b94e5a6d1f9942, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.342
+      objectReference: {fileID: 0}
+    - target: {fileID: 1185268526490227811, guid: c6453f8e1f814744d8b94e5a6d1f9942, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1185268526490227811, guid: c6453f8e1f814744d8b94e5a6d1f9942, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 1185268526490227811, guid: c6453f8e1f814744d8b94e5a6d1f9942, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 1185268526490227811, guid: c6453f8e1f814744d8b94e5a6d1f9942, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 90
+      objectReference: {fileID: 0}
+    - target: {fileID: 4120022183257669263, guid: c6453f8e1f814744d8b94e5a6d1f9942, type: 3}
+      propertyPath: looping
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4120022183257669263, guid: c6453f8e1f814744d8b94e5a6d1f9942, type: 3}
+      propertyPath: playOnAwake
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4120022183257669263, guid: c6453f8e1f814744d8b94e5a6d1f9942, type: 3}
+      propertyPath: ShapeModule.angle
+      value: 25
+      objectReference: {fileID: 0}
+    - target: {fileID: 4120022183257669263, guid: c6453f8e1f814744d8b94e5a6d1f9942, type: 3}
+      propertyPath: moveWithTransform
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4120022183257669263, guid: c6453f8e1f814744d8b94e5a6d1f9942, type: 3}
+      propertyPath: EmissionModule.rateOverTime.scalar
+      value: 10
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c6453f8e1f814744d8b94e5a6d1f9942, type: 3}
 --- !u!4 &1635079272 stripped
@@ -1126,6 +1171,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   FPCamera: {fileID: 486022936}
   range: 100
+  damage: 30
+  muzzleFlash: {fileID: 594377771}
 --- !u!1001 &1907470141
 PrefabInstance:
   m_ObjectHideFlags: 0
