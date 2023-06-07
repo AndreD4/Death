@@ -20,9 +20,10 @@ public class Weapons : MonoBehaviour
       RaycastHit hit;
       if(Physics.Raycast(FPCamera.transform.position, FPCamera.transform.forward, out hit, range))
       {
-        Debug.Log("i hit something" + hit.transform.name);
+        Debug.Log("i hit something:" + hit.transform.name);
         //add some effects
         EnemyHealth target = hit.transform.GetComponent<EnemyHealth>();
+        if(target == null) return;
         target.TakeDamage(damage);
       }
       else
