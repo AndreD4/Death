@@ -6,6 +6,7 @@ public class Weapons : MonoBehaviour
 {
     [SerializeField] Camera FPCamera;
     [SerializeField] float range = 100f;
+    [SerializeField] float damage = 30f;
     void Update()
     {
         if (Input.GetButtonDown("Fire1"))
@@ -22,7 +23,7 @@ public class Weapons : MonoBehaviour
         Debug.Log("i hit something" + hit.transform.name);
         //add some effects
         EnemyHealth target = hit.transform.GetComponent<EnemyHealth>();
-        //call a method on Enemyhealth that lowers enemys health
+        target.TakeDamage(damage);
       }
       else
       {
