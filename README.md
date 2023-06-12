@@ -16,14 +16,12 @@ PLAYER EXPERIENCE: Intense
 
 CORE MACHANICS: Shoot enemies
 
-CORE GAME LOOP: Collect ammo,shoot enemies, reach and of level
+CORE GAME LOOP: Collect ammo and shoot enemies.
 
 
 # Core Game Play
 
 Ammo count
-
-Wepons we can cycle through
 
 Enemie that attack when provoked
 
