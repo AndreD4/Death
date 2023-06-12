@@ -28,7 +28,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 100004}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: -0, y: 0.8, z: 0.01}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 5034009554088096742}
@@ -183,6 +183,7 @@ GameObject:
   - component: {fileID: 5776164156703722705}
   - component: {fileID: 702265896333125779}
   - component: {fileID: 3131933036873833778}
+  - component: {fileID: 2972056742342415497}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -342,6 +343,24 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f62c3ad00d43700469c52a3cffae29fe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  fpsCamera: {fileID: 2000000}
+  zoomOutFOV: 60
+  zoomInFOV: 20
+  zoomOutSensitivity: 2
+  zoomInSensitivity: 0.5
+--- !u!114 &2972056742342415497
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 100006}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ff5b0f7283c7f044794ed930ecc8289a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ammoAmount: 10
 --- !u!1 &1733331847890871627
 GameObject:
   m_ObjectHideFlags: 0
@@ -366,7 +385,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1733331847890871627}
   m_LocalRotation: {x: -0, y: 0.7861266, z: -0, w: -0.61806554}
-  m_LocalPosition: {x: 0.23, y: -0.68, z: 0.06}
+  m_LocalPosition: {x: 0.26, y: -0.83, z: 0.58}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 6282021593951661952}
@@ -380,6 +399,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 5034009554088096742}
     m_Modifications:
+    - target: {fileID: 1893534533, guid: ada2587319194f542957a8c2ae277cb9, type: 3}
+      propertyPath: FPCamera
+      value: 
+      objectReference: {fileID: 2000000}
     - target: {fileID: 2337074158996965286, guid: ada2587319194f542957a8c2ae277cb9, type: 3}
       propertyPath: m_RootOrder
       value: 0

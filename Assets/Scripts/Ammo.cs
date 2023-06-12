@@ -4,15 +4,15 @@ using UnityEngine;
 
 public class Ammo : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+   [SerializeField] int ammoAmount = 20;
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+   public int GetCurrentAmmo()
+   {
+     return ammoAmount;
+   }
+
+   public void ReduceCurrentAmmo()
+   {
+     ammoAmount --;
+   }
 }
