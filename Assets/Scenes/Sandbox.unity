@@ -1603,6 +1603,10 @@ PrefabInstance:
       propertyPath: m_Material
       value: 
       objectReference: {fileID: 13400000, guid: 9471378f4a8280c408226967fc53ad9c, type: 2}
+    - target: {fileID: 702265896333125779, guid: c6453f8e1f814744d8b94e5a6d1f9942, type: 3}
+      propertyPath: gameOverCanvas
+      value: 
+      objectReference: {fileID: 46494541}
     - target: {fileID: 1185268526490227811, guid: c6453f8e1f814744d8b94e5a6d1f9942, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0.342
@@ -2252,6 +2256,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2627497239306959168, guid: b86b997fbc711e149bb8c8ecee42bc5b, type: 3}
+      propertyPath: hitPoints
+      value: 200
+      objectReference: {fileID: 0}
     - target: {fileID: 3125896971497383441, guid: b86b997fbc711e149bb8c8ecee42bc5b, type: 3}
       propertyPath: m_Enabled
       value: 1
