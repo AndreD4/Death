@@ -4,15 +4,10 @@ using UnityEngine;
 
 public class DeathHandler : MonoBehaviour
 {
-    // Start is called before the first frame update
+    [SerializeField] Canvas gameOverCanvas;
+
     void Start()
     {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
+      gameOverCanvas.enabled = false;
     }
 }
