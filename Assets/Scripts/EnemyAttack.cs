@@ -12,6 +12,11 @@ public class EnemyAttack : MonoBehaviour
     target = FindObjectOfType<PlayerHealth>();
   }
 
+   public void OnDamgeTaken()
+    {
+      Debug.Log(name + "I also know that we took damage");
+    }
+
   public void AttackHitEvent()
   {
     if (target == null) return;
