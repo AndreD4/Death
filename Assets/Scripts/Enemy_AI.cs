@@ -39,6 +39,12 @@ public class Enemy_AI : MonoBehaviour
       }    
     }
 
+    public void OnDamgeTaken()
+    {
+      isProvoked = true;
+    }
+    
+
     private void EngagedTarget()
     {
       FaceTarget();
