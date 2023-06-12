@@ -63,6 +63,11 @@ public class Enemy_AI : MonoBehaviour
   
     }
 
+    private void FaceTarget()
+    {
+      
+    }
+
     void OnDrawGizmosSelected() 
     {
        Gizmos.color = Color.red;
