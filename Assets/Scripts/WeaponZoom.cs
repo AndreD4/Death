@@ -4,15 +4,7 @@ using UnityEngine;
 
 public class WeaponZoom : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+   [SerializeField] Camera fpsCamera;
+   [SerializeField] float zoomOutFOV = 60f;
+   [SerializeField] float zoomInFOV = 20f;
 }
